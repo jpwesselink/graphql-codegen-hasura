@@ -376,8 +376,16 @@ export function injectInsertReact({
       const pickObjects: PickInsert${fragmentNamePascalCase}ObjectsFn = (mutation: Insert${fragmentNamePascalCase}Mutation | null | undefined) => { return mutation?.insert_${entityName}?.returning || []; };
 
       const wrappedLazyMutation: Insert${fragmentNamePascalCase}ObjectsWrappedLazyMutationFn = async ( options ) => {
-        if(options && options.variables && options.variables.objects) options.variables.objects = options.variables.objects.map(objectItem => stripInsertInputClientFields({input: objectItem}));
-        const fetchResult: Insert${fragmentNamePascalCase}ObjectsMutationResult = await lazyMutation[0](options);
+        let objects;
+        if(options.variables.objects){
+          if(Array.isArray(options.variables.objects)){
+            objects = options.variables.objects;
+          } else {
+            objects = [options.variables.objects];
+          }
+        }
+        // if(options && options.variables && options.variables.objects) options.variables.objects = options.variables.objects.map(objectItem => stripInsertInputClientFields({input: objectItem}));
+        const fetchResult: Insert${fragmentNamePascalCase}ObjectsMutationResult = await lazyMutation[0]({ ...options, variables: { ...options.variables, objects}});
         return { ...fetchResult, objects: pickObjects(fetchResult.data) };
       };
 
