@@ -1,6 +1,6 @@
 {
   "name": "@cycletoaccelerate/graphql-codegen-hasura-gql",
-  "version": "4.9.2-alpha.1",
+  "version": "4.9.2-alpha.2",
   "description": "GraphQL Code Generator plugin for generating a CRUD Gql for Hasura",
   "author": "jamshally <ahrndee@gmail.com>",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "graphql-tag": "^2.0.0"
   },
   "devDependencies": {
-    "@cycletoaccelerate/graphql-codegen-hasura-shared": "^4.9.2-alpha.1",
+    "@cycletoaccelerate/graphql-codegen-hasura-shared": "^4.9.2-alpha.2",
     "@graphql-codegen/core": "^1.12.2",
     "@graphql-codegen/plugin-helpers": "1.12.2",
     "@graphql-codegen/typescript": "^1.12.2",
