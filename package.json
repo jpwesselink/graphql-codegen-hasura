@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "graphql-codegen-hasura",
+  "name": "@cycletoaccelerate/graphql-codegen-hasura",
   "version": "4.9.1",
   "description": "A collection of codgen plugins to support Hasura/Apollo GraphQL development",
   "author": "jamshally",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ablestack/graphql-codegen-hasura"
+    "url": "git+https://github.com/jpwesselink/graphql-codegen-hasura"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",

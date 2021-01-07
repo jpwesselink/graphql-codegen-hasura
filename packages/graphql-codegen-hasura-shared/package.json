@@ -1,13 +1,13 @@
 {
-  "name": "graphql-codegen-hasura-shared",
+  "name": "@cycletoaccelerate/graphql-codegen-hasura-shared",
   "version": "4.9.1",
   "description": "GraphQL Code Generator plugin for generating a CRUD TypeScript Config for Hasura from Documents",
   "author": "jamshally <ahrndee@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/ablestack/graphql-codegen-hasura",
+  "homepage": "https://github.com/jpwesselink/graphql-codegen-hasura",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ablestack/graphql-codegen-hasura"
+    "url": "git+https://github.com/jpwesselink/graphql-codegen-hasura"
   },
   "scripts": {
     "prepublishOnly": "shx rm -f dist/src/package.json dist/src/README.md  && shx cp package.json README.md dist/src/"

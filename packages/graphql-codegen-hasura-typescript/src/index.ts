@@ -15,7 +15,7 @@ import {
   injectSharedHelpersPre,
   injectSharedHelpersPost,
   injectGlobalHelperCodePost,
-} from "graphql-codegen-hasura-shared";
+} from "@cycletoaccelerate/graphql-codegen-hasura-shared";
 
 // -----------------------------------------------------
 //
